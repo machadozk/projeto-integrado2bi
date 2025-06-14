@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../img/greenbridge.png" type="image/x-icon"/>
+  <title>Detalhes da Coleta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+<header class="text-white d-flex align-items-center justify-content-between p-3" style="height: 70px; background-color: #055902;">
+  <div style="color: white; font-weight: normal; font-size: 30px;">GreenBridge</div>
+  <div class="d-flex gap-2">
+    <button class="btn btn-dark">FAQs</button>
+    <button class="btn btn-dark" onclick="window.location.href='../tela_home_empresa_AcaoSocial/home_empresa.html'">Home</button>
+  </div>
+</header>
+
+<main class="container mt-4">
+  <h4>Detalhes da coleta:</h4>
+  <div class="row g-4 align-items-stretch">
+    <!-- Formulário -->
+    <div class="col-md-6">
+      <div class="box-form p-4">
+        <div class="mb-2">
+          <label>Data do evento:</label>
+          <input type="date" id="dataEvento" class="form-control" required>
+        </div>
+        <div class="mb-2">
+          <label>Horário para coleta:</label>
+          <input type="time" class="form-control" required>
+        </div>
+        <div class="mb-2">
+          <label>Endereço:</label>
+          <input type="text" class="form-control" placeholder="Digite aqui" required>
+        </div>
+        <div class="mb-2">
+          <label>Tipo de resíduo:</label>
+          <select class="form-control" required>
+            <option value="" disabled selected hidden>Selecione</option>
+            <option>Orgânico</option>
+            <option>Reciclável</option>
+            <option>Resíduos Especiais</option>
+            <option>Rejeitos</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>Quantidade estimada:</label>
+          <select class="form-control" required>
+            <option value="" disabled selected hidden>Peso Kg</option>
+            <option>&lt; 10 kg</option>
+            <option>10-50 kg</option>
+            <option>50-100 kg</option>
+            <option>&gt; 100 kg</option>
+          </select>
+        </div>
+        <div class="d-flex gap-2">
+          <button id="cancelarBtn" class="btn btn-danger" type="button">Cancelar</button>
+          <button id="solicitarBtn" class="btn btn-success" type="submit">Solicitar Coleta</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapa -->
+    <div class="col-md-6">
+      <div class="box-map">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Pop-ups -->
+<div id="popupSucesso" class="popup">
+  <p class="mb-3">Solicitação enviada com sucesso!</p>
+  <button class="btn btn-success" onclick="fecharPopup('popupSucesso')">Voltar</button>
+</div>
+
+<div id="popupCancelar" class="confirm-cancel">
+  <p class="mb-3">Deseja cancelar a solicitação?</p>
+  <button class="btn btn-danger me-2" onclick="fecharPopup('popupCancelar')">Não</button>
+  <button class="btn btn-success" onclick="fecharPopup('popupCancelar')">Sim</button>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

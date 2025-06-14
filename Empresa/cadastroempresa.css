@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+ body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fffdf1;
+      min-height: 100vh;
+      margin: 0;
+  }
+
+  nav {
+    background: #055902;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #60a5fa;
+  }
+
+  #NomeEmpresa {
+    font-size: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+button {
+  background-color: #d5ff8f;
+  color: #055902;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #070707;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;  
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #050505;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.termos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #0f0f0f;
+  font-size: 14px;
+}
+
+.termos input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.termos a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.termos a:hover {
+  color: #4CAF50;
+}
+
+button[type="submit"] {
+  background-color: #d5ff8f;
+  color: #055902;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+button a {
+  text-decoration: none;
+  color: #055902;
+}

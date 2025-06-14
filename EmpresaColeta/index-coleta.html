@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="../img/greenbridge.png" type="image/x-icon"/>
+  <title>Mapa de Solicitações</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div style="color: white; font-weight: normal; font-size: 30px;">GreenBridge</div>
+    <div class="buttons-header">
+      <button class="icon-btn">FAQs</button>
+      <button class="icon-btn" onclick="window.location.href='../EmpresaColeta/coletas.html'">Home</button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Mapa de Solicitações</h1>
+    <div class="legenda">
+      <p><span class="icone finalizada">✔</span> Solicitação finalizada</p>
+      <p><span class="icone nao-finalizada">▲</span> Não finalizada</p>
+    </div>
+    <div class="mapa-container">
+      <img src="../img/mapa-coleta.png" alt="Mapa" class="mapa"/>
+    </div>
+    <p class="info-text">sr(a).... acima você poderá adicionar uma observação sobre os pontos de coleta que utilizou</p>
+    <aside>
+      <button class="aside-btn active">Mapa de solicitações</button>
+      <a href="motoristas.html"><button class="aside-btn">Motoristas</button></a>
+    </aside>
+  </main>
+</body>
+</html>

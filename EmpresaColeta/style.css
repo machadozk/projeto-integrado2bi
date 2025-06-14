@@ -1,0 +1,115 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefae0;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #055902;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 40px;
+}
+.buttons-header .icon-btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
+.mapa {
+  max-width: 90%;
+  border: 2px solid #ccc;
+}
+.legenda {
+  text-align: left;
+  max-width: 10%;  
+}
+.legenda p {
+  margin: 5px 0;
+}
+.icone {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.finalizada {
+  color: green;
+}
+.nao-finalizada {
+  color: red;
+}
+aside {
+  position: fixed;
+  right: 10px;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.aside-btn {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.aside-btn:hover {
+  background-color: #055902;
+  color: white;
+}
+.aside-btn.active {
+  background-color: #055902;
+  color: white;
+}
+.info-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.coletas-lista, .motoristas-lista {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+}
+.coleta-item, .motorista-item {
+  background-color: #d3d3d3;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+.disponivel {
+  background-color: green;
+}
+.ocupado {
+  background-color: red;
+}
+
+#selecionar { 
+  background-color: #055902;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+}

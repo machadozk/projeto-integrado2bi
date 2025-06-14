@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: clamp(1.75em, 1em, 3vw, 2.5em);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFDF0;
+     margin: 0;
+    padding: 0;
+    background-color: #FFFDF0 !important;
+}
+
+
+/* Aplica o fundo verde escuro direto na navbar */
+.custom-navbar {
+    background-color: #055902;
+    margin: 0;
+    border: none;
+}
+
+/* Garante que o conteúdo da navbar também fique verde */
+.custom-navbar .container-fluid {
+    background-color: transparent;
+}
+
+.navbar img {
+    height: 55px;
+    width: auto;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .2s;
+    padding: 15px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #d5ff8f;
+    transform: scale(1.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d3d3d3;
+}
+
+.menu-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+
+#menu:hover {
+    color: rgb(27, 170, 27);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+main {
+    padding: 20px;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+.welcome-text {
+    flex: 2;
+    padding-right: 100px;
+    color: #4e342e;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: #ccc;
+}
+
+.welcome-text h1 {
+    font-size: 34px;
+    font-family: Merriweather;
+}
+
+.welcome-text p {
+    font-family: Quicksand;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.highlight {
+    color: green;
+}
+
+.actions {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    flex-direction: column; /* Deixa os botões em coluna (um embaixo do outro) */
+    align-items: flex-end; /* Alinha os botões à direita */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente se tiver altura suficiente */
+    text-align: center;
+}
+
+.settings-button, .logout-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Quicksand;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.settings-button:hover {
+    transform: scale(1.03);
+    background-color: #dddddd;
+}
+
+.settings-button {
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    border-radius: 15px;
+}
+
+.logout-button:hover {
+    transform: scale(1.03);
+    background-color: #f84a3d;
+}
+
+.espace {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions {
+    margin-bottom: 5%;
+}
+
+
+.menu, .feedback {
+    flex: 1;
+}
+
+/* Centraliza elementos da .menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    font-family: Merriweather;
+}
+
+.menu h2{
+    color:#4e342e;
+}
+
+.menu button {
+    display: block;
+    width: 500px;          /* largura fixa maior */
+    height: 60px;          /* altura maior */
+    font-size: 20px;       /* texto maior */
+    font-weight: bold;     /* texto mais visível */
+    font-family: quisand;
+    padding: 15px 20px;
+    margin-bottom: 20px;   /* mais espaço entre os botões */
+    border: none;
+    background-color: #055902;  /* verde escuro */
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.menu button:hover {
+    background-color: #077b04;
+    transform: scale(1.03);
+    color:#d5ff8f;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.feedback {
+    background-color: white; /* fundo suave e agradável */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feedback h2 {
+    font-size: 24px;
+    color: #055902;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    resize: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFDF0;
+}
+
+.feedback .submit {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #055902;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: quisand;
+}
+
+.feedback .submit:hover {
+    background-color: #077b04;
+    transform: scale(1.05);
+    color: #d5ff8f;
+}
+
+.mail-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Adicione isso ao seu arquivo pro.css */
+
+/* Media Queries para responsividade */
+@media (max-width: 992px) {
+    .space {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .welcome-text {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .actions {
+        align-items: center;
+    }
+    
+    .sim {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu button {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .welcome-text h1 {
+        font-size: 28px;
+    }
+    
+    .welcome-text p {
+        font-size: 18px;
+    }
+    
+    .feedback {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar img {
+        height: 45px;
+    }
+    
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .welcome-text h1 {
+        font-size: 24px;
+    }
+    
+    .welcome-text p {
+        font-size: 16px;
+    }
+    
+    .menu button {
+        height: 50px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .feedback h2 {
+        font-size: 20px;
+    }
+    
+    textarea {
+        height: 120px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Adicione ao seu arquivo CSS */
+.mapa-coleta {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.mapa-coleta h2 {
+  color: #055902;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Merriweather', serif;
+}
+
+@media (max-width: 768px) {
+  #map, .mapa-coleta iframe {
+    height: 350px;
+  }
+}
+
+/* Adicione ou substitua estas regras no seu CSS */
+.mapa-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.status-form {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.mapa-iframe {
+  flex: 2;
+  min-width: 0; /* Permite que o iframe se ajuste corretamente */
+}
+
+/* Mantenha todas as outras regras CSS do componente anterior */
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .mapa-container {
+    flex-direction: column;
+  }
+  
+  .status-form {
+    order: 2;
+    margin-top: 20px;
+  }
+  
+  .mapa-iframe {
+    order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .status-form {
+    padding: 15px;
+  }
+}
+
+
+
+/* Adicione estas regras ao seu CSS */
+.status-lixo-container {
+  background-color: #FFFDF0;
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+.status-lixo-container h2 {
+  color: #055902;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Merriweather', serif;
+}
+
+.status-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.status-form {
+    font-family: quisand;
+    font-size: 23px;
+    color:#4e342e;
+}
+
+.form-select {
+    border-radius: 10px;
+}
+
+.status-options p {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px; /* Espaço entre os botões */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-top: 10px; /* Espaço acima dos botões */
+}
+
+.status-form {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.submit-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #055902;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: quisand;
+    margin: 15px auto 0;
+    display: block; /* Mudar de flex para block */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Garante que o texto também fique centralizado */
+    width: fit-content; /* Faz o botão ter apenas a largura do conteúdo */
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #077b04;
+    transform: scale(1.05);
+    color: #d5ff8f;
+}
+
+
+.status-info {
+  flex: 1;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  border: none;
+}
+
+.status-info h3 {
+  color: #055902;
+  margin-bottom: 20px;
+}
+
+.status-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.status-info li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4e342e;
+}
+
+.status-info .bi-check-circle {
+  color: #055902;
+  font-size: 1.2rem;
+}
+
+.status-icon {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Mantenha todas as regras CSS do componente original que mostrei anteriormente */
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .status-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .status-form, .status-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .status-lixo-container {
+    padding: 20px 0;
+  }
+  
+  .status-form, .status-info {
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ava {
+  text-align: center;
+  padding: 20px 15px;
+  color: #4b322c;
+}
+
+.t-ava {
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsivo entre 40px e 70px */
+  margin-bottom: 20px;
+}
+
+.avaliacoes {
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 10px #ccc;
+}
+
+.avaliacao {
+  background-color: #4b322c;
+  color: white;
+  padding: 15px;
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: column; /* Coluna em mobile */
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #a0cc3a;
+  font-size: clamp(1rem, 4vw, 1.875rem); /* Responsivo entre 16px e 30px */
+}
+
+.estrelas {
+  font-size: 1.2em;
+  color: white;
+}
+
+.comentario {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.text-ava {
+  width: 90%; /* Mais largo em mobile */
+  max-width: 600px; /* Limite máximo */
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Media Queries para ajustes específicos */
+@media (min-width: 768px) {
+  .avaliacao {
+    flex-direction: row; /* Linha em desktop */
+    padding: 20px;
+  }
+  
+  .text-ava {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .ava {
+    padding: 30px 20px;
+  }
+  
+  .text-ava {
+    width: 60%;
+  }
+}

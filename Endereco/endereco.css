@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffdf1;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #055902;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.NomeEmpresa {
+  font-size: 20px;
+}
+
+.NomeEmpresa a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #60a5fa;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  padding: 40px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #d5ff8f;
+  color: #055902;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b8e67a;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/greenbridge.png" type="image/x-icon"/>
+  <title>GreenBridge - Login</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+
+  <header>
+    <div class="NomeEmpresa"><a href="../index.html">GreenBridge</a></div>
+    <nav>
+      <a href="#">FAQs</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="left-placeholder">
+      <img src="../img/login-img.png">
+    </div>
+
+    <div class="login-container">
+      <h2>Log In</h2>
+      <form>
+        <div class="form-group">
+          <label for="login">*Login</label>
+          <input type="text" id="login" name="login" required>
+        </div>
+
+        <div class="form-group">
+          <label for="senha">*Senha</label>
+          <input type="password" id="senha" name="senha" required>
+        </div>
+
+        <div class="login-options">
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+
+        <button type="submit" onclick="validarLogin(); return false">Entrar</button>
+      </form>
+
+      <div class="divider"><span>ou</span></div>
+
+      <div class="google-login">
+        <img src="../img/google-icon.png" alt="Google" width="20" height="20">
+        <span>Google</span>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><img src="../img/facebook-icon.png" alt="Facebook" title="Facebook"></a>
+        <a href="#"><img src="../img/linkedin-icon.png" alt="LinkedIn" title="LinkedIn"></a>
+        <a href="#"><img src="../img/instagram-icon.png" alt="Instagram" title="Instagram"></a>
+        <a href="#"><img src="../img/twitter-icon.png" alt="X" title="Twitter (X)"></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenBridge. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Login JavaScript -->
+  <script src="./login.js"></script>
+</body>
+</html>
